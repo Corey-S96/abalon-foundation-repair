@@ -28,7 +28,7 @@ export default function Home() {
           playsInline
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         >
-          <source src="/videos/video-bg.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dhsnlkwhi/video/upload/v1782080363/video-bg_rynx2u.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay so text stays readable over the video */}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg,rgba(18,19,22,0.88) 0%,rgba(18,19,22,0.75) 50%,rgba(18,19,22,0.45) 100%)' }} />
