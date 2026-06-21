@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import EstimateForm from '../components/EstimateForm'
-import MobileCTA from '../components/MobileCTA'
 
 export default function Home() {
   return (
@@ -331,7 +330,6 @@ export default function Home() {
       </section>
 
       <Footer />
-      <MobileCTA />
     </>
   )
 }

@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import MobileCTA from '../components/MobileCTA'
 
 const SERVICES = [
   {
@@ -155,7 +154,6 @@ export default function Waterproofing() {
       </section>
 
       <Footer />
-      <MobileCTA />
     </>
   )
 }
