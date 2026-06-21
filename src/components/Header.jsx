@@ -91,17 +91,31 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="tel:+12047832500"
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                gap: 8, marginTop: 14,
-                background: '#EF1A30', color: '#fff', fontWeight: 700,
-                padding: 13, borderRadius: 6, fontSize: 16,
-              }}
-            >
-              Call (204) 783-2500
-            </a>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14 }}>
+              <Link
+                href="/#contact"
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: '#EF1A30', color: '#fff', fontWeight: 700,
+                  padding: 13, borderRadius: 6, fontSize: 16,
+                }}
+              >
+                Get a Free Estimate
+              </Link>
+              <a
+                href="tel:+12047832500"
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  gap: 8,
+                  background: '#F4F5F6', color: '#1C1E22', fontWeight: 700,
+                  border: '1px solid #E2E4E7',
+                  padding: 13, borderRadius: 6, fontSize: 16,
+                }}
+              >
+                Call (204) 783-2500
+              </a>
+            </div>
           </nav>
         </div>
       )}
