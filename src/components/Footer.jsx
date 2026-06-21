@@ -59,7 +59,8 @@ export default function Footer() {
         <div
           className="foot-bottom wrap"
           style={{
-            padding: '22px 32px',
+            paddingTop: 22,
+            paddingBottom: 22,
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',

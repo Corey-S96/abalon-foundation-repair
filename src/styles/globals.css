@@ -426,6 +426,91 @@ a { color: inherit; text-decoration: none; }
 .anchor-nav-link:hover { color: #fff; }
 
 /* ============================================================
+   PAGE HERO (service pages)
+   ============================================================ */
+.page-hero-inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.page-hero-h1 {
+  font-size: 52px;
+  line-height: 1.05;
+}
+
+/* ============================================================
+   SECTION DARK
+   ============================================================ */
+.section-dark {
+  padding: 96px 0;
+  background: #121316;
+}
+
+.section-cta {
+  padding: 80px 0;
+  background: #121316;
+}
+
+/* ============================================================
+   BEFORE / AFTER GRID
+   ============================================================ */
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #E2E4E7;
+}
+
+/* ============================================================
+   CARD BODY
+   ============================================================ */
+.card-body {
+  padding: 30px 32px 34px;
+}
+
+/* ============================================================
+   SERVICE CONTENT
+   ============================================================ */
+.service-h2 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #1C1E22;
+  margin-top: 8px;
+  line-height: 1.12;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+/* ============================================================
+   STICKY ANCHOR NAV
+   ============================================================ */
+.sticky-anchor-nav {
+  position: sticky;
+  top: 76px;
+  z-index: 40;
+  background: #1C1E22;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sticky-anchor-nav-inner {
+  display: flex;
+  gap: 26px;
+  overflow-x: auto;
+  height: 54px;
+  align-items: center;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.sticky-anchor-nav-inner::-webkit-scrollbar { display: none; }
+
+/* ============================================================
    LEGAL PAGES
    ============================================================ */
 .legal-h1 {
@@ -483,6 +568,24 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ============================================================
+   RESPONSIVE — SMALL TABLET  ≤768px
+   ============================================================ */
+@media (max-width: 768px) {
+  .sec-h2 { font-size: 32px; }
+  .contact-h2 { font-size: 32px !important; }
+  .page-hero-h1 { font-size: 40px !important; }
+  .page-hero-inner { padding-top: 60px !important; padding-bottom: 60px !important; }
+  .section-dark { padding: 72px 0 !important; }
+  .section-cta { padding: 64px 0 !important; }
+  .service-h2 { font-size: 26px !important; }
+  .service-list { gap: 64px !important; }
+  .card-body { padding: 24px 26px 28px !important; }
+  .grid-contact { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .grid-area { grid-template-columns: 1fr !important; gap: 36px !important; }
+  .foot-grid { grid-template-columns: 1fr 1fr !important; row-gap: 32px !important; }
+}
+
+/* ============================================================
    RESPONSIVE — MOBILE  ≤640px
    ============================================================ */
 @media (max-width: 640px) {
@@ -526,6 +629,30 @@ a { color: inherit; text-decoration: none; }
 
   .map-placeholder { height: 240px !important; }
   .cta-band-inner { flex-direction: column !important; align-items: flex-start !important; }
+
+  /* page hero */
+  .page-hero-h1 { font-size: 26px !important; line-height: 1.1 !important; }
+  .page-hero-inner { padding-top: 44px !important; padding-bottom: 44px !important; }
+
+  /* dark sections */
+  .section-dark { padding: 56px 0 !important; }
+  .section-cta { padding: 52px 0 !important; }
+
+  /* service */
+  .service-h2 { font-size: 22px !important; }
+  .service-list { gap: 48px !important; }
+
+  /* cards */
+  .card-body { padding: 20px 20px 24px !important; }
+
+  /* before / after */
+  .ba-grid { grid-template-columns: 1fr !important; }
+
+  /* sticky anchor nav */
+  .sticky-anchor-nav { top: 62px !important; }
+
+  /* footer */
+  footer { padding-top: 48px !important; }
 }
 
 /* ============================================================

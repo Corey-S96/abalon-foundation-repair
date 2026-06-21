@@ -90,7 +90,7 @@ export default function Home() {
                 {/* Replace with: <Image src="/images/structural-repairs.jpg" alt="Foundation crack repair" fill style={{objectFit:'cover'}} /> */}
                 <span style={{ fontSize: 11, color: '#9BA3AB' }}>[ photo: foundation crack repair ]</span>
               </div>
-              <div style={{ padding: '30px 32px 34px' }}>
+              <div className="card-body">
                 <h3 style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 700, fontSize: 24, color: '#1C1E22' }}>
                   Structural Repairs
                 </h3>
@@ -106,7 +106,7 @@ export default function Home() {
                 {/* Replace with: <Image src="/images/waterproofing.jpg" alt="Dry finished basement" fill style={{objectFit:'cover'}} /> */}
                 <span style={{ fontSize: 11, color: '#9BA3AB' }}>[ photo: dry finished basement ]</span>
               </div>
-              <div style={{ padding: '30px 32px 34px' }}>
+              <div className="card-body">
                 <h3 style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 700, fontSize: 24, color: '#1C1E22' }}>
                   Waterproofing
                 </h3>
@@ -183,7 +183,7 @@ export default function Home() {
               'Bowing wall → underpinned & levelled',
             ].map((caption, i) => (
               <div key={i}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, borderRadius: 8, overflow: 'hidden', border: '1px solid #E2E4E7' }}>
+                <div className="ba-grid">
                   <div className="img-placeholder" style={{ height: 170, borderRadius: 0, border: 'none', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-end', padding: 10 }}>
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', background: '#1C1E22', color: '#fff', padding: '4px 8px', borderRadius: 4 }}>BEFORE</span>
                   </div>
@@ -266,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* ── 7 · LEAD-CAPTURE BAND ────────────────────────────── */}
-      <section id="contact" style={{ background: '#121316', padding: '96px 0' }}>
+      <section id="contact" className="section-dark">
         <div className="grid-contact wrap">
           <div>
             <div className="eyebrow" style={{ marginBottom: 18 }}>

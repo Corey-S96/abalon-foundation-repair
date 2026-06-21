@@ -79,7 +79,7 @@ export default function Waterproofing() {
       {/* Page Hero */}
       <section style={{ position: 'relative', background: '#121316', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(125deg,#1C1E22 0 1px,#15171b 1px 13px)' }} />
-        <div style={{ position: 'relative', maxWidth: 1200, margin: '0 auto', padding: '80px 32px' }}>
+        <div className="page-hero-inner wrap" style={{ position: 'relative' }}>
           <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontWeight: 500, marginBottom: 20 }}>
             <Link href="/" style={{ transition: 'color 150ms' }}>Home</Link>
             &nbsp;/&nbsp; Waterproofing
@@ -88,7 +88,7 @@ export default function Waterproofing() {
             <span className="eyebrow-line" />
             <span className="eyebrow-text-red">Waterproofing</span>
           </div>
-          <h1 style={{
+          <h1 className="page-hero-h1" style={{
             fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: 52,
             lineHeight: 1.05, letterSpacing: '-0.02em', color: '#fff', maxWidth: 760,
           }}>
@@ -102,8 +102,8 @@ export default function Waterproofing() {
       </section>
 
       {/* Sticky anchor nav */}
-      <div style={{ position: 'sticky', top: 76, zIndex: 40, background: '#1C1E22', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', display: 'flex', gap: 26, overflowX: 'auto', height: 54, alignItems: 'center' }}>
+      <div className="sticky-anchor-nav">
+        <div className="sticky-anchor-nav-inner wrap">
           {SERVICES.map((s) => (
             <a key={s.id} href={`#${s.id}`} className="anchor-nav-link">{s.title}</a>
           ))}
@@ -111,8 +111,8 @@ export default function Waterproofing() {
       </div>
 
       {/* Service sections */}
-      <section style={{ background: '#fff', padding: '96px 0' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px', display: 'flex', flexDirection: 'column', gap: 88 }}>
+      <section className="section" style={{ background: '#fff' }}>
+        <div className="service-list wrap">
           {SERVICES.map((s) => (
             <div key={s.id} id={s.id} className="service-row" style={{
               display: 'grid',
@@ -137,7 +137,7 @@ export default function Waterproofing() {
       </section>
 
       {/* CTA band */}
-      <section style={{ background: '#121316', padding: '80px 0' }}>
+      <section className="section-cta">
         <div className="cta-band-inner wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
           <div>
             <h2 style={{
@@ -166,7 +166,7 @@ function ServiceContent({ service }) {
       <div style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: 14, color: '#EF1A30', letterSpacing: '0.04em' }}>
         {service.num}
       </div>
-      <h2 style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 700, fontSize: 32, color: '#1C1E22', marginTop: 8, lineHeight: 1.12 }}>
+      <h2 className="service-h2">
         {service.title}
       </h2>
       <p style={{ fontSize: 17, color: '#6B7078', marginTop: 14, lineHeight: 1.6 }}>{service.body}</p>
